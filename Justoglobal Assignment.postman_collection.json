@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "5639bc09-140f-41bd-8112-3b65fd105e77",
+		"name": "Justoglobal Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6324262"
+	},
+	"item": [
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"jay11\",\r\n    \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Request Link",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"jay11\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/request-link",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"request-link"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Auth Link",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/user/auth-link?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImpheTExIiwiaWF0IjoxNzE4ODg4OTIxLCJleHAiOjE3MTg4ODk1MjF9.wq4qEVt6uzT3qiz4GNYh-w2SlAGJh0JmjAQYcuWt9Yk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"auth-link"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImpheTExIiwiaWF0IjoxNzE4ODg4OTIxLCJleHAiOjE3MTg4ODk1MjF9.wq4qEVt6uzT3qiz4GNYh-w2SlAGJh0JmjAQYcuWt9Yk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Get Time",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImpheTExIiwiaWF0IjoxNzE4ODg4OTIxLCJleHAiOjE3MTg4ODk1MjF9.wq4qEVt6uzT3qiz4GNYh-w2SlAGJh0JmjAQYcuWt9Yk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/user/time",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"time"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Kick Out",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImpheTEiLCJpYXQiOjE3MTg4ODczNzcsImV4cCI6MTcxODg4Nzk3N30.ljEJ1P5ufO67EuRzFi3Q8VI2SXDNHz3tthbmYJTkseE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"jay11\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/kick-out",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"kick-out"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

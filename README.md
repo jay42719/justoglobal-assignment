@@ -44,9 +44,13 @@ You will need the following things properly installed on your computer.
     ```
 5. **Start frontend server**:
 
-    ```bash
+    ```bash 
     npm start
     ```
+## Postman Collection
+
+* https://documenter.getpostman.com/view/6324262/2sA3XV8KYE
+
 ## License
 
 This project is licensed under the MIT License.
